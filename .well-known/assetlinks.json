@@ -3,9 +3,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.yourname.ghostchat",
+      "package_name": "com.example.ghost_talk",
       "sha256_cert_fingerprints": [
-        "PLACEHOLDER_REPLACE_WITH_YOUR_SHA256"
+        "09:62:45:CE:15:FF:3B:CE:EC:35:AB:7B:61:7D:64:DF:2E:8D:71:A6:D1:0F:B5:1D:2F:9B:16:F2:42:E4:DE:33"
       ]
     }
   }
