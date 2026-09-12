@@ -37,18 +37,8 @@
       justify-content: center;
       font-size: 28px;
     }
-    h1 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: 0.3px;
-    }
-    p {
-      font-size: 14px;
-      color: #9A9CA8;
-      line-height: 1.6;
-      margin-bottom: 28px;
-    }
+    h1 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+    p { font-size: 14px; color: #9A9CA8; line-height: 1.6; margin-bottom: 28px; }
     .btn {
       display: block;
       width: 100%;
@@ -61,47 +51,28 @@
       cursor: pointer;
       border: none;
     }
-    .btn-primary {
-      background: #3DFFA3;
-      color: #000;
-    }
-    .btn-secondary {
-      background: transparent;
-      color: #9A9CA8;
-      border: 1px solid #2E303B;
-    }
-    .note {
-      font-size: 12px;
-      color: #5C5E6B;
-      margin-top: 20px;
-    }
+    .btn-primary { background: #3DFFA3; color: #000; }
+    .note { font-size: 12px; color: #5C5E6B; margin-top: 20px; }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="icon">👻</div>
     <h1>Ghost Chat</h1>
-    <p>
-      شخص بيحب يكلمك بشكل مجهول تماماً.<br/>
-      حمّل الأبلكيشن عشان تقدر ترد عليه.
-    </p>
+    <p>شخص بيحب يكلمك بشكل مجهول تماماً.<br/>حمّل الأبلكيشن عشان تقدر ترد عليه.</p>
     <a id="store-btn" href="#" class="btn btn-primary">حمّل الأبلكيشن</a>
     <p class="note">المحادثة هتتمسح تلقائياً بعد 24 ساعة</p>
   </div>
-
   <script>
-    // حفظ الـ code من الـ URL عشان الأبلكيشن يقدر يقراه بعد التثبيت
     const code = window.location.pathname.split('/g/')[1];
     if (code) localStorage.setItem('pending_link_code', code);
-
-    // التوجيه للـ store الصح
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const storeBtn = document.getElementById('store-btn');
     if (isIOS) {
       storeBtn.href = 'https://apps.apple.com/app/PLACEHOLDER';
       storeBtn.textContent = 'حمّل من App Store';
     } else {
-      storeBtn.href = 'https://play.google.com/store/apps/details?id=com.yourname.ghostchat';
+      storeBtn.href = 'https://play.google.com/store/apps/details?id=com.example.ghost_talk';
       storeBtn.textContent = 'حمّل من Google Play';
     }
   </script>
